@@ -27,7 +27,7 @@ int main() {
     cout << "Enter the second number: ";
     cin >> b;
     if(calculate(a,b,operation) == NULL){
-        cout << "Invalid operation. Please enter either '+', '-', '*', or '/'.";
+        cout << "Invalid operation. Please enter either '+', '-', '*', or '/'";
         return -1;
     }
     else{
