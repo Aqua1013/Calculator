@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int calculate(int a, int b, string operation){
+int calculate(int a..., string operation){
     if(operation == "+"){
         return a+b;
     } else if(operation == "-"){
