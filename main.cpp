@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int calculate(int a..., string operation){
+int eval(int a, int b, string operation){
     if(operation == "+"){
         return a+b;
     } else if(operation == "-"){
@@ -26,12 +26,13 @@ int main() {
     cin >> a;
     cout << "Enter the second number: ";
     cin >> b;
-    if(calculate(a,b,operation) == NULL){
+    if(eval(a,b,operation) == NULL){
         cout << "Invalid operation. Please enter either '+', '-', '*', or '/'";
-        return -1;
+        main();
+        return 0;
     }
     else{
-        cout << calculate(a,b,operation);
+        cout << eval(a,b,operation);
         return 0;
     }
 }
